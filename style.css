@@ -175,3 +175,28 @@ h4{
     font-size: 18px;
     margin-bottom: 45px;
 }
+
+.facebook-logo{
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.facebook-logo i {
+    font-size: 24px; 
+    color: white;  
+    margin-right: 8px; 
+}
+
+.facebook-logo a {
+    text-decoration: none;
+    color: white; 
+    font-size: 16px; 
+    font-weight: bold;
+}
+
+.facebook-logo a:hover {
+    text-decoration: underline;
+    color: #f9004d; 
+}
