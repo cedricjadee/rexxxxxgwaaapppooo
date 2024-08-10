@@ -24,6 +24,10 @@ nav{
     padding-right: 8%;
 }
 
+nav h2{
+    margin-left: 50px;
+}
+
 .logo{
     color: white;
     font-size: 35px;
@@ -66,6 +70,7 @@ nav ul li a:hover{
     padding: 10px 25px;
     border-radius: 30px;
     transition: transform .4s;
+    margin-right: 50px;
 }
 
 .btn:hover{
@@ -112,7 +117,7 @@ h4{
     border-radius: 30px;
 }
 
-.newslatter form input:last-child{
+.newslatter form button{
     position: absolute;
     display: inline-block;
     outline: none;
@@ -124,6 +129,7 @@ h4{
     box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
     top: 6px;
     right: 6px;
+    cursor: pointer;
 }
 
 .about{
@@ -199,4 +205,104 @@ h4{
 .facebook-logo a:hover {
     text-decoration: underline;
     color: #f9004d; 
+}
+
+.instagram{
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.instagram i {
+    font-size: 24px; 
+    color: white;  
+    margin-right: 8px; 
+}
+
+.instagram a {
+    text-decoration: none;
+    color: white; 
+    font-size: 16px; 
+    font-weight: bold;
+}
+
+.instagram a:hover {
+    text-decoration: underline;
+    color: #f9004d; 
+}
+
+.add-name h2{
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 0em;
+    font-size: 36px;
+}
+
+.add-name form{
+    max-width: 50em;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.add-name form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.add-name form .input-box input,
+.add-name form textarea{
+    width: 100%;
+    padding: 1.5em;
+    font-size: 18px;
+    color: black;
+    background: rgb(241,241,241);
+    border-radius: .8rem;
+    margin: 1rem 0;
+    resize: none;
+}
+
+.add-name form input[type="submit"] {
+    border-radius: 30px;
+    background-color: black;
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    cursor: pointer;
+    font-size: 16px; 
+    transition: background-color 0.3s ease; 
+}
+
+.add-name form input[type="submit"]:hover {
+    background-color: #f9004d; 
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    background-color: black;
+    padding: 20px 0;
+    z-index: 1000; /* Keeps the header on top */
+}
+
+nav {
+    position: fixed; /* Fix the navigation to the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: black;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+    z-index: 1000;
+}
+
+.content {
+    padding-top: 60px; /* Adjust based on the height of the fixed nav */
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
 }
