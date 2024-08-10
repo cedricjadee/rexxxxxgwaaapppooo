@@ -3,9 +3,7 @@
 <head>
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 </head>
 <body>
 
@@ -13,8 +11,8 @@
         <nav>
             <h2 class="logo">Portfo<span>lio</span></h2>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Me</a></li>
+                <li><a href="#" onclick="window.location.reload(); return false;">Home</a></li>
+                <li><a href="#about">About Me</a></li>
             </ul>
             <a href="#" class="btn">Subscribe</a>
         </nav>
@@ -26,13 +24,13 @@
             <div class="newslatter">
                 <form>
                     <input type="email" name="email" id="mail" placeholder="Enter Your Email">
-                    <input type="submit" type="submit" value="Let's Start">
+                    <input type="submit" value="Let's Start">
                 </form>
             </div>
         </div>
     </div>
     
-    <section class="about">
+    <section id="about" class="about">
         <div class="main">
             <img src="yeyee.png">
             <div class="about-text">
