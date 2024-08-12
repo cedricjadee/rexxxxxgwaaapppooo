@@ -284,25 +284,77 @@ h4{
     width: 100%;
     background-color: black;
     padding: 20px 0;
-    z-index: 1000; /* Keeps the header on top */
+    z-index: 1000; 
 }
 
 nav {
-    position: fixed; /* Fix the navigation to the top */
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
     background: black;
     padding: 10px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
     z-index: 1000;
 }
 
 .content {
-    padding-top: 60px; /* Adjust based on the height of the fixed nav */
+    padding-top: 60px; 
 }
 
-/* Smooth scrolling */
+
 html {
     scroll-behavior: smooth;
 }
+
+.chuy{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.chuy span{
+    position: relative;
+}
+
+.chuy span::before{
+    content: "Getuaban";
+    color: #f9004d;
+    animation: words 8s infinite;
+}
+
+.chuy span::after{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: calc(100%+8px);
+    height: 100%;
+    border-left: 3px solid black;
+    right: -8;
+    animation: cursor;
+}
+
+@keyframes cursor{
+    to{
+        border-left: 3px solid #f9004d;
+    }
+}
+
+@keyframes words{
+    0%, 20%{
+        content: "Getuaban";
+    }
+    21%, 40%{
+        content: "Gwapo";
+    }
+    41%, 60%{
+        content: "Cute";
+    }
+    61%, 80%{
+        content: "Pogi";
+    }
+    81%,100%{
+        content: "<3";
+    }
+}
+
